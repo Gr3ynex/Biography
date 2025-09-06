@@ -1,0 +1,8 @@
+.links {
+  text-allign: center;
+}
+.links a {
+  margin: 0 5px;
+  text-decoration: underline;
+  color: blue;
+}
