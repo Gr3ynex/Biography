@@ -1,8 +1,46 @@
 .links {
-  text-allign: center;
+  text-align: center; /* perbaiki ejaannya */
+  margin-top: 20px;
 }
+
 .links a {
-  margin: 0 5px;
-  text-decoration: underline;
-  color: blue;
+  margin: 0 10px;
+  text-decoration: none;
+  color: white;
+  background: #3498db;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-weight: bold;
 }
+
+body {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+}
+
+/* Heading */
+h1 {
+  color: #333;
+  margin-top: 30px;
+}
+
+/* Paragraph */
+p {
+  color: #666;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.profile {
+  text-align: center;   /* biar konten di div ini ketengah */
+  margin-top: 30px;     /* kasih jarak dari link */
+}
+
+.profile img {
+  width: 400px;               /* gedein gambar */
+  border: 5px solid #3498db;  /* kasih border biru */
+  border-radius: 15px;        /* ujung smooth */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3); /* shadow */
+}
+
