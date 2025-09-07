@@ -95,6 +95,18 @@ p {
   display: inline-block;
 }
 
+.container {
+  background-color: white; /* biru */
+  padding: 2rem;
+  border-radius: 1rem;
+  max-width: 40rem;
+  width: 70%;
+  color: black;
+  text-align: center; /* tulisan dari kiri */
+  line-height: 1.5;
+  box-shadow: 0 0.5rem 1.2rem rgba(0,0,0,0.2);
+  margin: 0 auto; /* center horizontal */
+
 
 
 
