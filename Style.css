@@ -106,7 +106,7 @@ p {
 }
 
 .commento-container {
-  max-width: 40rem;         /* lebar maksimal container */
+  max-width: 15rem;         /* lebar maksimal container */
   margin: 2rem auto;        /* center horizontal & jarak dari atas */
   padding: 1.5rem;          /* jarak di dalam container */
   border-radius: 1rem;      /* kotak membulat */
@@ -123,3 +123,4 @@ p {
     padding: 1rem;
   }
 }
+
