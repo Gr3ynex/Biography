@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form ke Google Sheets</title>
+  <link rel="stylesheet" href="info_login.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Kirim Data</h2>
+    <form id="myForm">
+      <input type="text" name="nama" placeholder="Nama" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <textarea name="pesan" placeholder="Pesan"></textarea>
+      <button type="submit">Kirim</button>
+    </form>
+  <a href="index.html" class="back-btn">⬅ Kembali</a>
+  <!-- Popup -->
+  <div id="popup" class="popup">
+    <p id="popup-message"></p>
+    <button onclick="closePopup()">OK</button>
+  </div>
+
+  <script>
+    const scriptURL = "https://script.google.com/macros/s/AKfycbxqA0FxIyKwJq_PARjyZFvWsIplyYMo_hGCnpk1OEq1k7dMfkdylMGlN2pYRODUNJNb2A/exec"; // ganti dengan URL dari Apps Script
+    const form = document.getElementById("myForm");
+    const popup = document.getElementById("popup");
+    const popupMessage = document.getElementById("popup-message");
+
+    form.addEventListener("submit", e => {
+      e.preventDefault();
+      const data = {
+        nama: form.nama.value,
+        email: form.email.value,
+        pesan: form.pesan.value
+      };
+
+      fetch(scriptURL, {
+        method: "POST",
+        body: JSON.stringify(data)
+      })
+      .then(res => res.text())
+      .then(txt => showPopup("✅ Data berhasil dikirim!"))
+      .catch(err => showPopup("❌ Gagal kirim data."));
+    });
+
+    function showPopup(message) {
+      popupMessage.innerText = message;
+      popup.style.display = "flex";
+    }
+
+    function closePopup() {
+      popup.style.display = "none";
+    }
+  </script>
+</body>
+</html>
