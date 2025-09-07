@@ -33,7 +33,7 @@ p {
   text-decoration: none;
   color: white;
   background: #3498db;
-  padding: 0.8rem 1.5rem;
+  padding: 0.7rem 1.5rem;
   border-radius: 35px;
   font-weight: bold;
   font-size: 1.2rem;
@@ -76,24 +76,35 @@ p {
   }
 }
 
-.commento-container {
-  max-width: 40rem;         /* lebar maksimal container */
-  margin: 2rem auto;        /* center horizontal & jarak dari atas */
-  padding: 1.5rem;          /* jarak di dalam container */
-  border-radius: 1rem;      /* kotak membulat */
-  box-shadow: 0 0.5rem 1.2rem rgba(0,0,0,0.2); /* shadow */
-  background-color: #3d3b3b; /* latar kotak komentar */
-  overflow: hidden;         /* potong jika Commento punya overflow */
-  font-size: 1rem;          /* base font size */
+.container {
+  background-color: white; /* biru */
+  padding: 2rem;
+  border-radius: 1rem;
+  max-width: 40rem;
+  width: 100%;
+  color: black;
+  text-align: none; /* tulisan dari kiri */
+  line-height: 1.5;
+  box-shadow: 0 0.5rem 1.2rem rgba(0,0,0,0.2);
+  margin: 0 auto; /* center horizontal */
+
+.link_2 {
+  text-align: center;
+  margin-top: 2rem;
 }
 
-/* Responsif untuk layar kecil */
-@media (max-width: 40rem) {
-  .commento-container {
-    margin: 1rem;
-    padding: 1rem;
-  }
+.link_2 a {
+  margin: 0 0.5rem;
+  text-decoration: none;
+  color: white;
+  background: #3498db;
+  padding: 0.7rem 1.5rem;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  display: inline-block;
 }
+
 
 
 
