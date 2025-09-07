@@ -76,18 +76,7 @@ p {
   }
 }
 
-.container {
-  background-color: white;
-  padding: 1.5rem;
-  border-radius: 1rem;
-  max-width: 90%;       /* tidak lebih dari 90% layar */
-  width: 100%;
-  color: black;
-  text-align: left;     /* biar tulisan dari kiri */
-  line-height: 1.5;
-  box-shadow: 0 0.5rem 1.2rem rgba(0,0,0,0.2);
-  margin: 2rem auto;    /* center horizontal + jarak atas bawah */
-}
+
 
 .link_2 {
   text-align: center;
@@ -105,6 +94,7 @@ p {
   font-size: 1.2rem;
   display: inline-block;
 }
+
 
 
 
