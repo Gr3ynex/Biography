@@ -82,7 +82,7 @@ p {
   padding: 1.5rem;          /* jarak di dalam container */
   border-radius: 1rem;      /* kotak membulat */
   box-shadow: 0 0.5rem 1.2rem rgba(0,0,0,0.2); /* shadow */
-  background-color: #666; /* latar kotak komentar */
+  background-color: #3d3b3b; /* latar kotak komentar */
   overflow: hidden;         /* potong jika Commento punya overflow */
   font-size: 1rem;          /* base font size */
 }
@@ -94,5 +94,6 @@ p {
     padding: 1rem;
   }
 }
+
 
 
