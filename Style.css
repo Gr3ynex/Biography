@@ -105,6 +105,12 @@ p {
   display: inline-block;
 }
 
+.commento-container {
+  max-width: 600px; /* batasi lebar */
+  margin: 0 auto;   /* center horizontal */
+}
 
-
+.commento-container iframe {
+  background-color: #f0f0f0; /* coba efek warna */
+}
 
