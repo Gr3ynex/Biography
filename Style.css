@@ -106,11 +106,20 @@ p {
 }
 
 .commento-container {
-  max-width: 600px; /* batasi lebar */
-  margin: 0 auto;   /* center horizontal */
+  max-width: 40rem;         /* lebar maksimal container */
+  margin: 2rem auto;        /* center horizontal & jarak dari atas */
+  padding: 1.5rem;          /* jarak di dalam container */
+  border-radius: 1rem;      /* kotak membulat */
+  box-shadow: 0 0.5rem 1.2rem rgba(0,0,0,0.2); /* shadow */
+  background-color: #f0f0f0; /* latar kotak komentar */
+  overflow: hidden;         /* potong jika Commento punya overflow */
+  font-size: 1rem;          /* base font size */
 }
 
-.commento-container iframe {
-  background-color: #f0f0f0; /* coba efek warna */
+/* Responsif untuk layar kecil */
+@media (max-width: 40rem) {
+  .commento-container {
+    margin: 1rem;
+    padding: 1rem;
+  }
 }
-
