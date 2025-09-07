@@ -29,7 +29,7 @@ h2 {
 
 /* Form inputs */
 form input, form textarea {
-  width: 90%;
+  width: 95%;
   padding: 10px;
   margin: 8px 0;
   border: 1px solid #ccc;
@@ -149,6 +149,7 @@ form button:hover {
   color: #0078ff;
   text-align: center;
 }
+
 
 
 
